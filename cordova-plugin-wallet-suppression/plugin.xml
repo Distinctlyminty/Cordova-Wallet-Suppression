@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-wallet-suppression" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-wallet-suppression</name>
+    <js-module name="walletsuppression" src="www/walletSuppression.js">
+        <clobbers target="walletsuppression" />
+    </js-module>
+
+    <platform name="ios">
+    <framework src="PassKit.framework"/>
+        <config-file target="config.xml" parent="/*">
+            <feature name="WalletSuppression">
+                <param name="ios-package" value="WalletSuppression"/>
+            </feature>
+
+        </config-file>
+      <header-file src="src/ios/WalletSuppression.h" />
+      <source-file src="src/ios/WalletSuppression.m" />
+
+	<config-file target="*/Entitlements-Debug.plist" parent="com.apple.developer.passkit.pass-presentation-suppression">
+				<true/>
+		</config-file>
+		<config-file target="*/Entitlements-Release.plist" parent="com.apple.developer.passkit.pass-presentation-suppression">
+			<true/>
+		</config-file>
+    </platform>
+
+   <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="WalletPlugin">
+            <param name="android-package" value="com.ald.WalletSupression"/>
+        </feature>
+    </config-file>
+
+    <source-file src="src/android/WalletSuppression.java" target-dir="src/org/apache/cordova/walletsuppression/" />
+</platform>
+
+</plugin>
