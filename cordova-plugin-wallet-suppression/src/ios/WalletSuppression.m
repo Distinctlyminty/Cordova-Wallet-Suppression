@@ -8,7 +8,6 @@
 @implementation WalletSuppression : CDVPlugin
 
 static PKSuppressionRequestToken * tokenPKSuppression = nil;
-private static var tokenPKSuppresion:PKSuppressionRequestToken!;
 
 - (void)enableWallet:(CDVInvokedUrlCommand *)command
 {
@@ -62,8 +61,6 @@ private static var tokenPKSuppresion:PKSuppressionRequestToken!;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:result];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
     }
-    
-   
 }
 
 @end
