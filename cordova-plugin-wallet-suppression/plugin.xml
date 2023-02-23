@@ -29,7 +29,7 @@
    <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="WalletPlugin">
-            <param name="android-package" value="com.ald.WalletSupression"/>
+            <param name="android-package" value="WalletSupression"/>
         </feature>
     </config-file>
 
