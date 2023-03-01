@@ -28,13 +28,13 @@
 
    <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="WalletPlugin">
+        <feature name="WalletSuppression">
             <param name="android-package" value="org.apache.cordova.walletsuppression"/>
              <param name="onload" value="true" />
         </feature>
     </config-file>
 
-    <source-file src="src/android/WalletPlugin.java" target-dir="src/org/apache/cordova/walletsuppression/" />
+    <source-file src="src/android/WalletSuppression.java" target-dir="src/org/apache/cordova/walletsuppression/" />
 </platform>
 
 </plugin>

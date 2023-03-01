@@ -11,7 +11,7 @@ import android.nfc.NfcAdapter;
 import android.nfc.NfcEvent;
 
 
-public class WalletPlugin extends CordovaPlugin {
+public class WalletSuppression extends CordovaPlugin {
 
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
