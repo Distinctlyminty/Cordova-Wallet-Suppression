@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-wallet-suppression",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "A Cordova plugin for supressing Apple and Android wallets.",
   "cordova": {
     "id": "cordova-plugin-wallet-suppression",

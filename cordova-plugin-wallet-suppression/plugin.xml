@@ -29,7 +29,7 @@
    <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="WalletSuppression">
-            <param name="android-package" value="org.apache.cordova.walletsuppression"/>
+            <param name="android-package" value="org.apache.cordova.walletsuppression.WalletSuppression"/>
              <param name="onload" value="true" />
         </feature>
     </config-file>
