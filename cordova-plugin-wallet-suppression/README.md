@@ -9,3 +9,4 @@ Apple Pay suppression requires a special entitlement from Apple.
 You must have the com.apple.developer.passkit.pass-presentation-suppression entitlement on your provisioning profile.
 
 
+10.0.1.3 - Added support for Android API 35
